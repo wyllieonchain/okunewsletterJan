@@ -28,15 +28,16 @@ const id = data.untrustedData.buttonIndex;
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/2.png" />
     <meta property="fc:frame:button:1" content="Restart" />
-    <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api?${id}" />
+    <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api?$3" />
   </head></html>`);
   } else {
     return new NextResponse(`<!DOCTYPE html><html><head>
-      <title>it broke</title>
+      <title>restart</title>
       <meta property="fc:frame" content="vNext" />
       <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/0.png" />
-      <meta property="fc:frame:button:1" content="it broke" />
-      <meta property="fc:frame:post_redirect" content="${process.env.NEXT_PUBLIC_BASE_URL}/" />
+      <meta property="fc:frame:button:1" content="Bullish" />
+      <meta property="fc:frame:button:2" content="Bearish" />
+      <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api?${id}" />
     </head></html>`);
     }
 }
