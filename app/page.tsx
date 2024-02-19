@@ -13,7 +13,7 @@ const frameMetadata = getFrameMetadata({
   // choosing the inital image
   image: `${process.env.NEXT_PUBLIC_BASE_URL}/0.png`,
   // post_url tells the frame where to send the metadata, and in this case, what the id is
-  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api?id=1`,
+  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/run?id=1`,
 });
 
 // Description of the frame, not on the frame
