@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Bullish or Bearish</h1>
+      <h1>Do you trade onchain?</h1>
     </>
   );
 }
