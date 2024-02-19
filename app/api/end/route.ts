@@ -14,6 +14,8 @@ const id = data.untrustedData.buttonIndex;
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/run?${id}" />
   </head></html>`);
 
+}
+
   export async function POST(req: NextRequest): Promise<Response> {
     return getResponse(req);
   }
