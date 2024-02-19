@@ -4,10 +4,10 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Bullish"
+      label: "Yes"
     },
     {
-      label: "Bearish"
+      label: "No"
     }
   ],
   // choosing the inital image
@@ -18,11 +18,11 @@ const frameMetadata = getFrameMetadata({
 
 // Description of the frame, not on the frame
 export const metadata: Metadata = {
-  title: 'Bullish or Bearish',
-  description: 'A frame asking you about the market',
+  title: 'Do you trade onchain?',
+  description: 'A frame asking you if you trade onchain',
   openGraph: {
-    title: 'Bullish or Bearish',
-    description: 'A frame asking you about the market',
+    title: 'Do you trade onchain?',
+    description: 'A frame asking you if you trade onchain',
     images: [`${process.env.NEXT_PUBLIC_BASE_URL}/0.png`],
   },
   other: {

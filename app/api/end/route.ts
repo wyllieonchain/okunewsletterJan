@@ -9,8 +9,8 @@ const id = data.untrustedData.buttonIndex;
     <title>restart</title>
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/0.png" />
-    <meta property="fc:frame:button:1" content="Bullish" />
-    <meta property="fc:frame:button:2" content="Bearish" />
+    <meta property="fc:frame:button:1" content="Yes" />
+    <meta property="fc:frame:button:2" content="No" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/run?${id}" />
   </head></html>`);
 
