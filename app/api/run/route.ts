@@ -26,7 +26,7 @@ const id = data.untrustedData.buttonIndex;
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>You suck</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/2.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/02.png" />
     <meta property="fc:frame:button:1" content="Restart" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/end?${id}" />
   </head></html>`);
