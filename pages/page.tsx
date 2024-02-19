@@ -17,7 +17,7 @@ const frameMetadata = getFrameMetadata({
 });
 
 // Description of the frame, not on the frame
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: 'Bullish or Bearish',
   description: 'A frame asking you about the market',
   openGraph: {
