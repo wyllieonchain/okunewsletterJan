@@ -12,6 +12,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 const data = await req.json();
 const id = data.untrustedData.buttonIndex;
 
+let isDone: boolean = false;
+
 // have my two cases, route to the right one
   if(id === 1){
       return new NextResponse(`<!DOCTYPE html><html><head>
@@ -23,14 +25,17 @@ const id = data.untrustedData.buttonIndex;
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api?${id}" />
   </head></html>`);
   } else if(id === 2) {
+  isDone = true;
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>Bearish</title>
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/2.png" />
     <meta property="fc:frame:button:1" content="Restart" />
-    <meta property="fc:frame:post_redirect" content="${process.env.NEXT_PUBLIC_BASE_URL}" />
+    <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api?${id}" />
   </head></html>`);
-  } else {
+  } 
+  if (isDone){
+    isDone = false;
     return new NextResponse(`<!DOCTYPE html><html><head>
       <title>restart</title>
       <meta property="fc:frame" content="vNext" />
