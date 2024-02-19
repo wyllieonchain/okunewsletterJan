@@ -8,7 +8,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 //read the id (similar to the end pinata)
 
-async function getResponse(req: NextRequest): Promise<NextResponse> {
+export async function getResponse(req: NextRequest): Promise<Response> {
 const data = await req.json();
 const id = data.untrustedData.buttonIndex;
 
@@ -36,7 +36,7 @@ const id = data.untrustedData.buttonIndex;
       <meta property="fc:frame" content="vNext" />
       <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/0.png" />
       <meta property="fc:frame:button:1" content="it broke" />
-      <meta property="fc:frame:post_redirect" content="${process.env.NEXT_PUBLIC_BASE_URL}/" />
+      <meta property="fc:frame:post_redirect" content="${process.env.NEXT_PUBLIC_BASE_URL}/api?id=2" />
     </head></html>`);
     }
 }
