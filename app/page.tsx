@@ -4,26 +4,29 @@ import type { Metadata } from 'next';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: "Yes"
+      label: "Multichain Volume"
     },
     {
-      label: "No"
+      label: "Layer1/Layer2"
+    }
+    {
+      label: "Protocol Efficiency"
     }
   ],
   // choosing the inital image
-  image: `${process.env.NEXT_PUBLIC_BASE_URL}/00.png`,
+  image: `${process.env.NEXT_PUBLIC_BASE_URL}/ujan.png`,
   // post_url tells the frame where to send the metadata, and in this case, what the id is
   post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/run?id=1`,
 });
 
 // Description of the frame, not on the frame
 export const metadata: Metadata = {
-  title: 'Do you trade onchain?',
-  description: 'A frame asking you if you trade onchain',
+  title: 'Uniswap Monthly Financial Report',
+  description: 'A frame displaying Uniswap report data',
   openGraph: {
-    title: 'Do you trade onchain?',
-    description: 'A frame asking you if you trade onchain',
-    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/0.png`],
+    title: 'Uniswap Monthly Financial Report',
+    description: 'A frame displaying Uniswap report data',
+    images: [`${process.env.NEXT_PUBLIC_BASE_URL}/ujan.png`],
   },
   other: {
     ...frameMetadata,
@@ -33,7 +36,8 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Do you trade onchain?</h1>
+      <h1>Uniswap Monthly Financial Report Frame</h1>
+      <a href= "https://newsletter.oku.trade"> Newsletter</a>
     </>
   );
 }
