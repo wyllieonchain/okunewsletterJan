@@ -37,7 +37,7 @@ export default function Page() {
   return (
     <>
       <h1>Uniswap Monthly Financial Report Frame</h1>
-      <a href= "https://newsletter.oku.trade"> Newsletter</a>
+      <a href= "https://www.newsletter.oku.trade"> Newsletter</a>
     </>
   );
 }
