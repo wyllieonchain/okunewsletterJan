@@ -33,7 +33,7 @@ const id = data.untrustedData.buttonIndex;
     return new NextResponse(`<!DOCTYPE html><html><head>
       <title>Protocol Efficiency</title>
       <meta property="fc:frame" content="vNext" />
-      <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/peff.png" />
+      <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/peff0.png" />
       <meta property="fc:frame:button:1" content="Return" />
       <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/end?${id}" />
   </head></html>`);
