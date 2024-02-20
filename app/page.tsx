@@ -8,7 +8,7 @@ const frameMetadata = getFrameMetadata({
     },
     {
       label: "Layer1/Layer2"
-    }
+    },
     {
       label: "Protocol Efficiency"
     }
