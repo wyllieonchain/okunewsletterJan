@@ -17,7 +17,7 @@ const id = data.untrustedData.buttonIndex;
       return new NextResponse(`<!DOCTYPE html><html><head>
     <title>Multichain Volume</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/mvol.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/mvol0.png" />
     <meta property="fc:frame:button:1" content="Return" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/end?${id}" />
   </head></html>`);
@@ -25,7 +25,7 @@ const id = data.untrustedData.buttonIndex;
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>Layer1 Layer2</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/l1l2.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/l1l20.png" />
     <meta property="fc:frame:button:1" content="Return" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/end?${id}" />
   </head></html>`);

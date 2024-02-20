@@ -8,7 +8,7 @@ const id = data.untrustedData.buttonIndex;
   return new NextResponse(`<!DOCTYPE html><html><head>
     <title>restart</title>
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/ujan.png" />
+    <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_BASE_URL}/ujan0.png" />
     <meta property="fc:frame:button:1" content="Multichain Volume" />
     <meta property="fc:frame:button:2" content="Layer1/Layer2" />
     <meta property="fc:frame:button:3" content="Protocol Efficiency" />
