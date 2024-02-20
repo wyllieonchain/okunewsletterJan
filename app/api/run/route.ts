@@ -29,7 +29,6 @@ const id = data.untrustedData.buttonIndex;
     <meta property="fc:frame:button:1" content="Return" />
     <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/api/end?${id}" />
   </head></html>`);
-  }
   } else if(id === 3) {
     return new NextResponse(`<!DOCTYPE html><html><head>
       <title>Protocol Efficiency</title>
